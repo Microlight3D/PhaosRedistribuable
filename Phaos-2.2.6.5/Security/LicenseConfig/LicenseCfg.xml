@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Company>Microlight3D</Company>
+  <Application Name="Phaos" DefaultVersion="2.1">
+    <Module Name="HighRes">false</Module>
+    <Module Name="AdvancedTests">false</Module>
+    <Module Name="LiveDrawing">false</Module>
+  </Application>
+  <Application Name="Luminis" DefaultVersion="1.0">
+    
+  </Application>
+</Configuration>

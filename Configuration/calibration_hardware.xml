@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- File settings of SFTprint       -->
+<!-- App Color Theme				 -->
+<!-- by Olivier Lecarme 04/07/19     -->
+<!-- contains all settings			 -->
+<Software Name="Phaos" Ver="2.0 or higher">
+  <device>
+    <serialnumber>SPUV-2022-XX</serialnumber>
+    <customerid>XXXX</customerid>
+    <inithardware>Steel base 2021-01
+    Opto-electronic head 2020-09--NVR2-385NM-NewLS
+    Motorized XY stage 2021-01--8MTL120XY--8SMC5B
+    Motorized XY stage 201606--8MTF-75LS05--8SMC5--PS36-4.4-4 (modèle standard)
+    Motorized Z stage 2021-01--8MVT100-25-1--8SMC5B
+    Manual rotation stage 2017-08--7R150-1
+    x1 objective 201601
+    x2.5 objective 201601
+    x5 objective 201601
+    x10 objective 201601
+    Clip holder 2021-01
+    Magnetic holder 2021-01
+    Wafer holder 201704 (modèle standard)
+    Glass slide kit 201612 (modèle standard)</inithardware>
+  </device>
+</Software>

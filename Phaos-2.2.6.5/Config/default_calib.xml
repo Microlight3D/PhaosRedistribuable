@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configurations>
+  <Configuration Type="SP435">
+    <Objective Model="0.5">
+      <PixelSize Unit="µm" Type="Single">13.60204</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">25.4</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">1.54</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">0</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;0)</GreenToBlueShift>
+      <AngleToImage Unit="°" Type="Single">0</AngleToImage>
+      <RefImageFP>reference.tif</RefImageFP>
+    </Objective>
+    <Objective Model="1">
+      <PixelSize Unit="µm" Type="Single">7.14346</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">12.7</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">1.512</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">30</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;1993)</GreenToBlueShift>
+      <RefImageFP>reference_x1.tif</RefImageFP>
+    </Objective>
+    <Objective Model="2.5">
+      <PixelSize Unit="µm" Type="Single">2.85605</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">5.08</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">1.512</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">40</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;362)</GreenToBlueShift>
+      <RefImageFP>reference.tif</RefImageFP>
+    </Objective>
+    <Objective Model="5">
+      <PixelSize Unit="µm" Type="Single">1.41393</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">2.54</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">1.516</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">40</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;86.5)</GreenToBlueShift>
+      <RefImageFP>reference_x5.tif</RefImageFP>
+    </Objective>
+    <Objective Model="10">
+      <PixelSize Unit="µm" Type="Single">0.70384</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">1.27</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">1.521</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">40</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;17.8)</GreenToBlueShift>
+      <RefImageFP>reference_x10.tif</RefImageFP>
+    </Objective>
+    <StageXY Model="all">
+      <AngleToImage Unit="°" Type="Single">0</AngleToImage>
+      <AxisX_Name></AxisX_Name>
+      <AxisX_Inverted Type="Boolean">false</AxisX_Inverted>
+      <AxisY_Name></AxisY_Name>
+      <AxisY_Inverted Type="Boolean">false</AxisY_Inverted>
+    </StageXY>
+    <StageZ Model="all">
+      <AxisZ_Name></AxisZ_Name>
+      <AxisZ_Inverted Type="Boolean">false</AxisZ_Inverted>
+    </StageZ>
+    <DLP Model="LCD">
+      <RemanenceTime Unit="ms" Type="Int32">75</RemanenceTime>
+    </DLP>
+  </Configuration>
+  <Configuration Type="SPUV">
+    <Objective Model="1">
+      <PixelSize Unit="µm" Type="Single">5.6662</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">16.7</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">-0.77</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">0</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;-903)</GreenToBlueShift>
+      <RefImageFP>reference_x1.tif</RefImageFP>
+    </Objective>
+    <Objective Model="2.5">
+      <PixelSize Unit="µm" Type="Single">2.2467</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">6.66</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">-0.77</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">0</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;-126)</GreenToBlueShift>
+      <RefImageFP>reference.tif</RefImageFP>
+    </Objective>
+    <Objective Model="5">
+      <PixelSize Unit="µm" Type="Single">1.1321</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">3.37</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">-0.77</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">0</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;-14)</GreenToBlueShift>
+      <RefImageFP>reference_x5.tif</RefImageFP>
+    </Objective>
+    <Objective Model="10">
+      <PixelSize Unit="µm" Type="Single">0.5672</PixelSize>
+      <CameraScale Unit="µm/px" Type="Single">1.66</CameraScale>
+      <CameraToDrawingRatio Unit="none" Type="Single">-0.77</CameraToDrawingRatio>
+      <UniformityCorrection Unit="%" Type="Single">0</UniformityCorrection>
+      <GreenToBlueShift Unit="µm" Type="Vector3">(0;0;0)</GreenToBlueShift>
+      <RefImageFP>reference_x10.tif</RefImageFP>
+    </Objective>
+    <StageXY Model="all">
+      <AngleToImage Unit="°" Type="Single">0</AngleToImage>
+      <AxisX_Name></AxisX_Name>
+      <AxisX_Inverted Type="Boolean">false</AxisX_Inverted>
+      <AxisY_Name></AxisY_Name>
+      <AxisY_Inverted Type="Boolean">false</AxisY_Inverted>
+    </StageXY>
+    <StageZ Model="all">
+      <AxisZ_Name></AxisZ_Name>
+      <AxisZ_Inverted Type="Boolean">false</AxisZ_Inverted>
+    </StageZ>
+    <DLP Model="DMD">
+      <RemanenceTime Unit="ms" Type="Int32">75</RemanenceTime>
+    </DLP>
+  </Configuration>
+  <Configuration Type="MicroFab">
+    <TiltPlate>
+	  <Pitch Unit="°" Type="Single">0.1</Pitch>
+	  <Roll Unit="°" Type="Single">0.05</Roll>
+	</TiltPlate>
+  </Configuration>
+</Configurations>

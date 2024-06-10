@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration Type="Phaos">
+  <Alignment>
+    <ImgOnCam_Center Unit="px" Type="Vector2">(640; 512)</ImgOnCam_Center>
+  </Alignment>
+  <CameraView>
+    <ScaleBar_Show Type="Boolean">true</ScaleBar_Show>
+    <Target_Show Type="Boolean">false</Target_Show>
+    <Target_Size Type="Vector2">(120; 100)</Target_Size>
+    <Target_CenterLocation Type="Vector2">(1296;972)</Target_CenterLocation>
+    <AE_Enabled Type="Boolean">false</AE_Enabled>
+  </CameraView>
+  <Design>
+    <SubImageShift_Delta Unit="px" Type="Vector2">(0;0)</SubImageShift_Delta>
+    <Overlap Unit="px" Type="Vector2">(0;0)</Overlap>
+    <Softening_Strength Type="Single">2</Softening_Strength>
+  </Design>
+  <Lighting>
+    <RoomLED_Power Unit="%" Type="Int32">21</RoomLED_Power>
+  </Lighting>
+  <Machine>
+    <Start_Objective Type="Single">2.5</Start_Objective>
+    <TotalExposureTime Unit="s" Type="Single">0</TotalExposureTime>
+    <Camera_StartExposure Unit="µs" Type="Single">0</Camera_StartExposure>
+    <Camera_StartGain Unit="dB" Type="Single">0</Camera_StartGain>
+  </Machine>
+  <Motion>
+    <FreeMode_XInverted Type="Boolean">false</FreeMode_XInverted>
+    <FreeMode_YInverted Type="Boolean">false</FreeMode_YInverted>
+    <FreeMode_ZInverted Type="Boolean">false</FreeMode_ZInverted>
+    <Backlash_Enabled Type="Boolean">true</Backlash_Enabled>
+    <Holder_SelectedIdx Type="Int32">0</Holder_SelectedIdx>
+    <Fit_ShowErrors Type="Boolean">false</Fit_ShowErrors>
+  </Motion>
+  <Recipes>
+    <Substrate></Substrate>
+    <Resist></Resist>
+  </Recipes>
+</Configuration>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Configuration Type="Hardwares">
+  <!-- 
+    This area contains all machine patterns:
+	  - All required component categories (sub-nodes)
+	    with their default value
+	  - Used to setup machine.xml at first App start
+  -->
+  <Machine Model="SP435">
+    <Projector>TW</Projector>
+	  <Camera>Ximea</Camera>
+	  <XYStage>auto</XYStage>
+	  <ZStage>auto</ZStage>
+  </Machine>
+  <Machine Model="SPUV">
+    <Projector>NVR2</Projector>
+	  <Camera>Ximea</Camera>
+	  <Mainboard>M3D05v3</Mainboard>
+	  <XYStage>auto</XYStage>
+	  <ZStage>auto</ZStage>
+  </Machine>
+  <Machine Model="MicroFab">
+    <Laser>Teem532</Laser>
+	  <Camera>IDS</Camera>
+	  <Piezo>PI</Piezo>
+	  <XYStage>auto</XYStage>
+  </Machine>
+  <Machine Model="MicroFabScanner">
+    <Laser>Teem532</Laser>
+	  <Camera>IDS</Camera>
+	  <Galvo>Thorlabs</Galvo>
+	  <XYStage>auto</XYStage>
+  </Machine>
+  <!-- machine pattern end -->
+  
+  <!--
+    This area contains the config of every components instrumented by ML3D:
+  -->
+  <Projector Model="TW">
+    <DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+    <LED_Power Unit="%" Type="Single">100</LED_Power>
+    <FlipMode Type="Int32">1</FlipMode>
+  </Projector>
+  <Projector Model="NVR">
+    <DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+    <LED_Calibration Unit="mA/digit" Type="Single">5.8593</LED_Calibration>
+    <LED_MaxCurrent Unit="mA" Type="Int32">5994</LED_MaxCurrent>
+    <LED_MinCurrent Unit="mA" Type="Int32">300</LED_MinCurrent>
+    <LED_Power Unit="%" Type="Single">50</LED_Power>
+    <FlipMode Type="Int32">4</FlipMode>
+  </Projector>
+  <Projector Model="NVR+">
+    <DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+    <LED_Calibration Unit="mA/digit" Type="Single">11.7186</LED_Calibration>
+    <!-- Real max is 9492 but LED overheating above 75% of this value -->
+    <LED_MaxCurrent Unit="mA" Type="Int32">7119</LED_MaxCurrent>
+    <LED_MinCurrent Unit="mA" Type="Int32">1067</LED_MinCurrent>
+    <LED_Power Unit="%" Type="Single">50</LED_Power>
+    <FlipMode Type="Int32">4</FlipMode>
+  </Projector>
+  <Projector Model="NVR2">
+    <DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+    <LED_Calibration Unit="mA/digit" Type="Single">4.8828</LED_Calibration>
+    <!-- Real max is 4995 but LED overheating above 80% of this value -->
+    <LED_MaxCurrent Unit="mA" Type="Int32">3996</LED_MaxCurrent>
+    <LED_MinCurrent Unit="mA" Type="Int32">435</LED_MinCurrent>
+    <LED_Power Unit="%" Type="Single">50</LED_Power>
+    <FlipMode Type="Int32">4</FlipMode>
+  </Projector>
+  <Projector Model="Mockup">
+    <DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+    <LED_Power Unit="%" Type="Single">50</LED_Power>
+    <FlipMode Type="Int32">4</FlipMode>
+  </Projector>
+  <Camera Model="Ximea">
+    <ImagePixelFormat Unit="none" Type="String">Format24bppRgb</ImagePixelFormat>
+    <Framerate Unit="Hz" Type="Single">24</Framerate>
+    <Exposure Unit="µs" Type="Single">1000</Exposure>
+    <Gain Unit="dB" Type="Single">0</Gain>
+  </Camera>
+  <Camera Model="IDS">
+    <Name>U3-368xXCP-C</Name>
+    <IsColor Type="Boolean">true</IsColor>
+    <ExposureMax Unit="µs" Type="Single">500000</ExposureMax>
+  </Camera>
+  <Camera Model="Mockup">
+    <Exposure Unit="µs" Type="Single">1000</Exposure>
+  </Camera>
+  <Mainboard Model="M3D05v3">
+    <MCU_Firmware Type="Single">1</MCU_Firmware>
+  </Mainboard>
+  <Mainboard Model="M3D05v4">
+    <MCU_Firmware Type="Single">2</MCU_Firmware>
+  </Mainboard>
+  <Mainboard Model="Mockup">
+    <MCU_Firmware Type="Single">1</MCU_Firmware>
+  </Mainboard>
+  <Mainboard Model="Unified_v1">
+    <MCU_Firmware Type="Single">1</MCU_Firmware>
+  </Mainboard>
+  <XYStage Model="8MTL120">
+    <AxisType Unit="none" Type="String">XY</AxisType>
+    <MotorType Unit="none" Type="String">BLDC</MotorType>
+    <Range Unit="µm" Type="Vector2">(-59000;59000)</Range>
+    <MotorStepSize Unit="µm" Type="Single">0.025</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">2</EncoderStepSize>
+    <RPM Unit="µm/s" Type="Single">500</RPM>
+    <SpeedRange Unit="µm/s" Type="Vector2">(500;50000)</SpeedRange>
+    <Acceleration Unit="µm/s²" Type="Single">1000000</Acceleration>
+    <Deceleration Unit="µm/s²" Type="Single">1000000</Deceleration>
+    <Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+    <Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+  </XYStage>
+  <XYStage Model="8MTF-75">
+    <AxisType Unit="none" Type="String">XY</AxisType>
+    <MotorType Unit="none" Type="String">Stepper</MotorType>
+    <Range Unit="µm" Type="Vector2">(-37400;37400)</Range>
+    <MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;5000)</SpeedRange>
+    <!-- (X;Y) -->
+    <Backlash_Distance Unit="µm" Type="Vector2">(4500;4500)</Backlash_Distance>
+    <Backlash_Speed Unit="µm/s" Type="Vector2">(5000;5000)</Backlash_Speed>
+    <Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+    <Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+  </XYStage>
+  <XYStage Model="Manual">
+    <Range Unit="µm" Type="Vector2">(-10000;10000)</Range>
+  </XYStage>
+  <ZStage Model="8MVT100-25">
+    <AxisType Unit="none" Type="String">Z</AxisType>
+    <MotorType Unit="none" Type="String">Stepper</MotorType>
+    <Range Unit="µm" Type="Vector2">(-2450;22950)</Range>
+    <MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+    <Acceleration Unit="µm/s²" Type="Single">10000</Acceleration>
+    <Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+    <Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+  </ZStage>
+  <ZStage Model="8MVT70-13">
+    <AxisType Unit="none" Type="String">Z</AxisType>
+    <MotorType Unit="none" Type="String">Stepper</MotorType>
+    <Range Unit="µm" Type="Vector2">(-2000;10000)</Range>
+    <MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+    <Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+    <Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+  </ZStage>
+  <ZStage Model="Manual">
+    <Range Unit="µm" Type="Vector2">(0;10000)</Range>
+  </ZStage>
+  <XYStage Model="Mockup">
+    <VirtualX>StandaX</VirtualX>
+    <VirtualY>StandaY</VirtualY>
+    <Range Unit="µm" Type="Vector2">(-37400;37400)</Range>
+    <MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;5000)</SpeedRange>
+    <!-- (X;Y) -->
+    <Backlash_Distance Unit="µm" Type="Vector2">(4500;4500)</Backlash_Distance>
+    <Backlash_Speed Unit="µm/s" Type="Vector2">(5000;5000)</Backlash_Speed>
+  </XYStage>
+  <XYStage Model="LinearMockup">
+    <VirtualX>StandaX</VirtualX>
+    <VirtualY>StandaY</VirtualY>
+    <Range Unit="µm" Type="Vector2">(-59000;59000)</Range>
+    <MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;50000)</SpeedRange>
+    <!-- (X;Y) -->
+    <Backlash_Distance Unit="µm" Type="Vector2">(0;0)</Backlash_Distance>
+    <Backlash_Speed Unit="µm/s" Type="Vector2">(50000;50000)</Backlash_Speed>
+    <Acceleration Unit="µm/s²" Type="Single">1000000</Acceleration>
+    <Deceleration Unit="µm/s²" Type="Single">1000000</Deceleration>
+  </XYStage>
+  <ZStage Model="Mockup">
+    <VirtualZ>StandaZ</VirtualZ>
+    <Range Unit="µm" Type="Vector2">(-2000;10000)</Range>
+    <MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+    <EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+    <SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+  </ZStage>
+</Configuration>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Machine ID and config  -->
+<!-- Author: Olivier Lecarme -->
+<!-- Last update: 20/05/2021 -->
+<!-- Description: partial device config -->
+<Software Name="Phaos" Ver="2.0 or higher">
+  <device>
+    <serialnumber>not defined</serialnumber>
+    <customerid>not defined</customerid>
+    <inithardware>not defined</inithardware>
+  </device>
+</Software>

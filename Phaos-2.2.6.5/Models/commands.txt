@@ -1,0 +1,21 @@
+MANUFACTURER CONSOLE
+
+WARNING: this mode is for maintenance and repairing purposes only.
+DO NOT USE it by yourself. 
+Carefully follow the instructions given by the manufacturer (Microlight3D)
+
+NOTE: commands are case sensitive
+
+-------------------------------------------------------------------------------------------------
+COMMAND                        |   SHORT DESCRIPTION
+-------------------------------------------------------------------------------------------------
+calib [name]                   |   generate an HTML calibration document with filename [name]
+loadcfg                        |   load an XML identification config file into the settings
+man                            |   display those instructions
+privilege                      |   display current user privilege
+report                         |   generate a diagnosis report
+reset controller               |   deep reset of the controller memory
+read settings                  |   display the complete setting file of Phaos
+read settings [name]           |   display the value of the setting [name]. Ex: read settings maxspeed1
+stage cfg                      |   get informations about all stages connected
+write settings [name] [value]  |   edit the [value] of the setting [name]. Ex: write settings maxspeed1 1000

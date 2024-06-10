@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration Type="Phaos">
+  <Information>
+    <SerialNumber>not defined</SerialNumber>
+    <CustomerID>not defined</CustomerID>
+    <InitHardware>not defined</InitHardware>
+    <NotificationSender>smartprint@sft.eu.com</NotificationSender>
+  </Information>
+  <Security>
+    <LicenceKey></LicenceKey>
+    <Settings_Lock Type="Boolean">false</Settings_Lock>
+    <Settings_Pwd></Settings_Pwd>
+  </Security>
+  <CameraView>
+    <ImageFlip>None</ImageFlip>
+    <OverrideCameraAE Type="Boolean">false</OverrideCameraAE>
+    <OverrideCameraFlip Type="Boolean">true</OverrideCameraFlip>
+    <ScaleBar_TextFont>Times</ScaleBar_TextFont>
+    <ScaleBar_TextFontSize Unit="px" Type="Int32">18</ScaleBar_TextFontSize>
+    <ScaleBar_Color Type="Vector3">(255; 0; 0)</ScaleBar_Color>
+    <ScaleBar_BarLength Unit="px" Type="Int32">100</ScaleBar_BarLength>
+    <ScaleBar_BarThickness Unit="px" Type="Int32">4</ScaleBar_BarThickness>
+    <OverExposure_Show Type="Boolean">true</OverExposure_Show>
+    <OverExposure_Threshold Type="Int32">200</OverExposure_Threshold>
+    <AE_BrightnessThreshold Type="Int32">200</AE_BrightnessThreshold>
+    <AE_MinPcAboveThreshold Unit="x100 %" Type="Single">0.01</AE_MinPcAboveThreshold>
+    <AE_MaxPcAboveThreshold Unit="x100 %" Type="Single">0.07</AE_MaxPcAboveThreshold>
+    <AE_PcOfMaxExp Unit="x100 %" Type="Single">0.1</AE_PcOfMaxExp>
+  </CameraView>
+  <ConversionGDS>
+    <KLayout_Filepath>C:\Program Files (x86)\KLayout\klayout_app.exe</KLayout_Filepath>
+    <KLayout_DimFileName>dim.out</KLayout_DimFileName>
+    <!-- delay (in ms) between script execution and data extraction -->
+    <!-- required because the script write data to be extracted on HDD -->
+    <KLayout_Delay Unit="ms" Type="Int32">6000</KLayout_Delay>
+    <!-- max waiting time to open the image -->
+    <KLayout_MaxWaitTime Unit="s" Type="Int32">10</KLayout_MaxWaitTime>
+    <GDSScript_FileName1>get_drawing_size.rb</GDSScript_FileName1>
+    <GDSScript_FileName2>convert2png.rb</GDSScript_FileName2>
+    <GDSScript_FileName3>stitch.rb</GDSScript_FileName3>
+    <GDSScript_FileName4>stitch_sspeed.rb</GDSScript_FileName4>
+    <GDSScript_FileName5>layer_overview.rb</GDSScript_FileName5>
+    <GDSScript_TmpFileName>script.rb</GDSScript_TmpFileName>
+    <Option_AA Type="Int32">2</Option_AA>
+    <Option_HRX Unit="px" Type="Int32">400</Option_HRX>
+    <Option_HRY Unit="px" Type="Int32">200</Option_HRY>
+  </ConversionGDS>
+  <Design>
+    <Overlap_Max Unit="px" Type="Int32">10</Overlap_Max>
+    <Overlap_Min Unit="px" Type="Int32">-10</Overlap_Min>
+  </Design>
+  <Development>
+    <Enabled Type="Boolean">false</Enabled>
+  </Development>
+  <Focus>
+    <Image_Mode>default</Image_Mode>
+    <Image_Filepath></Image_Filepath>
+    <Illumination_SafeMode Type="Boolean">true</Illumination_SafeMode>
+  </Focus>
+  <Lighting>
+    <MonitoringLED_Power Unit="%" Type="Int32">100</MonitoringLED_Power>
+  </Lighting>
+  <Motion>
+    <Stage_WaitingTime Unit="ms" Type="Int32">200</Stage_WaitingTime>
+    <Stage_LongWaitingTime Unit="ms" Type="Int32">2000</Stage_LongWaitingTime>
+    <Overview_XInverted Type="Boolean">false</Overview_XInverted>
+    <Overview_YInverted Type="Boolean">false</Overview_YInverted>
+    <Overview_ZInverted Type="Boolean">false</Overview_ZInverted>
+  </Motion>
+  <Tutorial>
+    <Enable Type="Boolean">true</Enable>
+    <ShowAll Type="Boolean">false</ShowAll>
+  </Tutorial>
+</Configuration>

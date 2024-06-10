@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Recipes>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Manufacturer">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS 1.2µm</Resist>
+    <Time>10</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Manufacturer">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS 1.2µm</Resist>
+    <Time>1</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Manufacturer">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS 1.2µm</Resist>
+    <Time>0.4</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Manufacturer">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS 1.2µm</Resist>
+    <Time>0.2</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ4562 7µm</Resist>
+    <Time>10</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ4562 7µm</Resist>
+    <Time>1</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ4562 7µm</Resist>
+    <Time>0.4</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ4562 7µm</Resist>
+    <Time>0.2</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>Ormocomp 10µm</Resist>
+    <Time>0.5</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>Ormocomp 10µm</Resist>
+    <Time>0.1</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>Ormocomp 10µm</Resist>
+    <Time>0.4</Time>
+    <LightPower>12</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>Ormocomp 10µm</Resist>
+    <Time>0.3</Time>
+    <LightPower>12</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ40XT 25 µm</Resist>
+    <Time>400</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ40XT 25 µm</Resist>
+    <Time>40</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ40XT 25 µm</Resist>
+    <Time>20</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ40XT 25 µm</Resist>
+    <Time>10</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ ECI 3012 1.2µm</Resist>
+    <Time>7.5</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ ECI 3012 1.2µm</Resist>
+    <Time>0.75</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ ECI 3012 1.2µm</Resist>
+    <Time>0.3</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ ECI 3012 1.2µm</Resist>
+    <Time>0.15</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ125nXT 35µm</Resist>
+    <Time>200</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ125nXT 35µm</Resist>
+    <Time>20</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ125nXT 35µm</Resist>
+    <Time>12</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ125nXT 35µm</Resist>
+    <Time>6</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ5214 1.4µm</Resist>
+    <Time>2.5</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ5214 1.4µm</Resist>
+    <Time>0.25</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ5214 1.4µm</Resist>
+    <Time>0.1</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ5214 1.4µm</Resist>
+    <Time>0.05</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2050 50µm</Resist>
+    <Time>90</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2050 50µm</Resist>
+    <Time>30</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2050 50µm</Resist>
+    <Time>10</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2100 100µm</Resist>
+    <Time>140</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2100 100µm</Resist>
+    <Time>25</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+  <Recipe Machine="SPUV" LightEngine="NVR2" Owner="Default">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>SU8 2100 100µm</Resist>
+    <Time>15</Time>
+    <LightPower>50</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>0.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>180</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>1</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>69</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>2.5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>11</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>5</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>2.5</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>10</Objective>
+    <Substrate>Si</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>1.4</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>0.5</Objective>
+    <Substrate>Glass</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>230</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>1</Objective>
+    <Substrate>Glass</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>40</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>2.5</Objective>
+    <Substrate>Glass</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>9</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>5</Objective>
+    <Substrate>Glass</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>3</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+  <Recipe Machine="SP435" LightEngine="Epson" Owner="Manufacturer">
+    <Objective>10</Objective>
+    <Substrate>Glass</Substrate>
+    <Resist>AZ1512HS</Resist>
+    <Time>1</Time>
+    <LightPower>100</LightPower>
+  </Recipe>
+</Recipes>
