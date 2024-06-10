@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Configuration Type="Hardwares">
+	<!-- 
+		This area contains all machine patterns:
+		- All required component categories (sub-nodes)
+			with their default value
+		- Used to setup machine.xml at first App start
+	-->
+	<Machine Model="SP435">
+		<Projector>TW</Projector>
+		<Camera>Ximea</Camera>
+		<XYStage>auto</XYStage>
+		<ZStage>auto</ZStage>
+	</Machine>
+	<Machine Model="SPUV">
+		<Projector>NVR2</Projector>
+		<Camera>Ximea</Camera>
+		<Mainboard>M3D05v3</Mainboard>
+		<XYStage>auto</XYStage>
+		<ZStage>auto</ZStage>
+		<LED1>ShieldM3D05_LED1</LED1>
+		<LED2>MainBoard_LED2</LED2>
+		<Fan1>MainBoard_In</Fan1>
+		<Fan2>MainBoard_Out</Fan2>
+		<Ruptor1>MainBoard_CAP</Ruptor1>
+		<Ruptor2>MainBoard_AU</Ruptor2>
+	</Machine>
+	<!-- machine pattern end -->
+	
+	<!--
+		This area contains the config of every components instrumented by ML3D:
+	-->
+	<!-- PROJECTORS -->
+	<Projector Model="TW">
+		<DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Power Unit="%" Type="Single">100</LED_Power>
+		<FlipMode Type="Int32">1</FlipMode>
+		<Wavelength Unit="nm" Type="Single">435</Wavelength>
+	</Projector>
+	<Projector Model="NVR">
+		<DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Calibration Unit="mA/digit" Type="Single">5.8593</LED_Calibration>
+		<LED_MaxCurrent Unit="mA" Type="Int32">5994</LED_MaxCurrent>
+		<LED_MinCurrent Unit="mA" Type="Int32">300</LED_MinCurrent>
+		<LED_Power Unit="%" Type="Single">50</LED_Power>
+		<FlipMode Type="Int32">4</FlipMode>
+		<Wavelength Unit="nm" Type="Single">385</Wavelength>
+		<WarningLimit Unit="°C" Type="Single">80</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">100</CriticalLimit>
+	</Projector>
+	<Projector Model="NVR+">
+		<DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Calibration Unit="mA/digit" Type="Single">11.7186</LED_Calibration>
+		<!-- Real max is 9492 but LED overheating above 75% of this value -->
+		<LED_MaxCurrent Unit="mA" Type="Int32">7119</LED_MaxCurrent>
+		<LED_MinCurrent Unit="mA" Type="Int32">1067</LED_MinCurrent>
+		<LED_Power Unit="%" Type="Single">50</LED_Power>
+		<FlipMode Type="Int32">4</FlipMode>
+		<Wavelength Unit="nm" Type="Single">385</Wavelength>
+		<WarningLimit Unit="°C" Type="Single">80</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">100</CriticalLimit>
+	</Projector>
+	<Projector Model="NVR2">
+		<DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Calibration Unit="mA/digit" Type="Single">4.8828</LED_Calibration>
+		<!-- Real max is 4995 but LED overheating above 80% of this value -->
+		<LED_MaxCurrent Unit="mA" Type="Int32">3996</LED_MaxCurrent>
+		<LED_MinCurrent Unit="mA" Type="Int32">435</LED_MinCurrent>
+		<LED_Power Unit="%" Type="Single">50</LED_Power>
+		<FlipMode Type="Int32">4</FlipMode>
+		<Wavelength Unit="nm" Type="Single">385</Wavelength>
+		<WarningLimit Unit="°C" Type="Single">80</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">100</CriticalLimit>
+	</Projector>
+	<Projector Model="NVR2_Elec">
+		<DLPSize Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Calibration Unit="mA/digit" Type="Single">4.8828</LED_Calibration>
+		<LED_MaxCurrent Unit="mA" Type="Int32">3996</LED_MaxCurrent>
+		<LED_MinCurrent Unit="mA" Type="Int32">435</LED_MinCurrent>
+		<LED_Power Unit="%" Type="Single">50</LED_Power>
+		<FlipMode Type="Int32">4</FlipMode>
+		<!-- ComChannel shall be R, G or B -->
+		<LED_ComChannel>B</LED_ComChannel>
+		<Wavelength Unit="nm" Type="Single">385</Wavelength>
+		<WarningLimit Unit="°C" Type="Single">80</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">100</CriticalLimit>
+		<MCU_Name>ML3D_LEUVControl</MCU_Name>
+		<MCU_Firmware Type="Int32">1</MCU_Firmware>
+	</Projector>
+	<Projector Model="Mockup">
+		<DLPSize Unit="px" Type="Vector2">(1920;1080)</DLPSize>
+		<LED_Power Unit="%" Type="Single">50</LED_Power>
+		<FlipMode Type="Int32">4</FlipMode>
+		<Wavelength Unit="nm" Type="Single">385</Wavelength>
+		<WarningLimit Unit="°C" Type="Single">80</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">100</CriticalLimit>
+	</Projector>
+	<!-- CAMERAS -->
+	<Camera Model="Ximea">
+		<ImagePixelFormat Unit="none" Type="String">Format24bppRgb</ImagePixelFormat>
+		<Framerate Unit="Hz" Type="Single">24</Framerate>
+		<Exposure Unit="µs" Type="Single">1000</Exposure>
+		<Gain Unit="dB" Type="Single">0</Gain>
+	</Camera>
+	<Camera Model="IDS">
+		<Name>U3-368xXCP-C</Name>
+		<IsColor Type="Boolean">true</IsColor>
+		<ExposureMax Unit="µs" Type="Single">500000</ExposureMax>
+	</Camera>
+	<Camera Model="Mockup">
+		<Exposure Unit="µs" Type="Single">1000</Exposure>
+	</Camera>
+	<!-- MAINBOARDS -->
+	<Mainboard Model="M3D05v3">
+		<MCU_Firmware Type="Single">1</MCU_Firmware>
+	</Mainboard>
+	<Mainboard Model="M3D05v4">
+		<MCU_Firmware Type="Single">2</MCU_Firmware>
+	</Mainboard>
+	<Mainboard Model="Mockup">
+		<MCU_Firmware Type="Single">1</MCU_Firmware>
+	</Mainboard>
+	<Mainboard Model="Unified_v1">
+		<MCU_Firmware Type="Single">1</MCU_Firmware>
+	</Mainboard>
+	<!-- XY STAGES -->
+	<XYStage Model="8MTL120">
+		<AxisType Unit="none" Type="String">XY</AxisType>
+		<MotorType Unit="none" Type="String">BLDC</MotorType>
+		<Range Unit="µm" Type="Vector2">(-59000;59000)</Range>
+		<MotorStepSize Unit="µm" Type="Single">0.025</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">2</EncoderStepSize>
+		<RPM Unit="µm/s" Type="Single">500</RPM>
+		<SpeedRange Unit="µm/s" Type="Vector2">(500;50000)</SpeedRange>
+		<Acceleration Unit="µm/s²" Type="Single">1000000</Acceleration>
+		<Deceleration Unit="µm/s²" Type="Single">1000000</Deceleration>
+		<Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+		<Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+	</XYStage>
+	<XYStage Model="8MTF-75">
+		<AxisType Unit="none" Type="String">XY</AxisType>
+		<MotorType Unit="none" Type="String">Stepper</MotorType>
+		<Range Unit="µm" Type="Vector2">(-37400;37400)</Range>
+		<MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;5000)</SpeedRange>
+		<!-- (X;Y) -->
+		<Backlash_Distance Unit="µm" Type="Vector2">(4500;4500)</Backlash_Distance>
+		<Backlash_Speed Unit="µm/s" Type="Vector2">(5000;5000)</Backlash_Speed>
+		<Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+		<Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+	</XYStage>
+	<XYStage Model="Manual">
+		<Range Unit="µm" Type="Vector2">(-10000;10000)</Range>
+	</XYStage>
+	<XYStage Model="Mockup">
+		<VirtualX>StandaX</VirtualX>
+		<VirtualY>StandaY</VirtualY>
+		<Range Unit="µm" Type="Vector2">(-37400;37400)</Range>
+		<MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;5000)</SpeedRange>
+		<!-- (X;Y) -->
+		<Backlash_Distance Unit="µm" Type="Vector2">(4500;4500)</Backlash_Distance>
+		<Backlash_Speed Unit="µm/s" Type="Vector2">(5000;5000)</Backlash_Speed>
+	</XYStage>
+	<XYStage Model="LinearMockup">
+		<VirtualX>StandaX</VirtualX>
+		<VirtualY>StandaY</VirtualY>
+		<Range Unit="µm" Type="Vector2">(-59000;59000)</Range>
+		<MotorStepSize Unit="µm" Type="Single">2.5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">2.5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;50000)</SpeedRange>
+		<!-- (X;Y) -->
+		<Backlash_Distance Unit="µm" Type="Vector2">(0;0)</Backlash_Distance>
+		<Backlash_Speed Unit="µm/s" Type="Vector2">(50000;50000)</Backlash_Speed>
+		<Acceleration Unit="µm/s²" Type="Single">1000000</Acceleration>
+		<Deceleration Unit="µm/s²" Type="Single">1000000</Deceleration>
+	</XYStage>
+	<!-- Z STAGES -->
+	<ZStage Model="8MVT100-25">
+		<AxisType Unit="none" Type="String">Z</AxisType>
+		<MotorType Unit="none" Type="String">Stepper</MotorType>
+		<Range Unit="µm" Type="Vector2">(-2450;22950)</Range>
+		<MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+		<Acceleration Unit="µm/s²" Type="Single">10000</Acceleration>
+		<Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+		<Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+	</ZStage>
+	<ZStage Model="8MVT70-13">
+		<AxisType Unit="none" Type="String">Z</AxisType>
+		<MotorType Unit="none" Type="String">Stepper</MotorType>
+		<Range Unit="µm" Type="Vector2">(-2000;10000)</Range>
+		<MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+		<Connection_Timeout Unit="ms" Type="Int32">10000</Connection_Timeout>
+		<Connection_RetryDelay Unit="ms" Type="Int32">100</Connection_RetryDelay>
+	</ZStage>
+	<ZStage Model="Manual">
+		<Range Unit="µm" Type="Vector2">(0;10000)</Range>
+	</ZStage>
+	<ZStage Model="Mockup">
+		<VirtualZ>StandaZ</VirtualZ>
+		<Range Unit="µm" Type="Vector2">(-2000;10000)</Range>
+		<MotorStepSize Unit="µm" Type="Single">5</MotorStepSize>
+		<EncoderStepSize Unit="µm" Type="Single">5</EncoderStepSize>
+		<SpeedRange Unit="µm/s" Type="Vector2">(0;2500)</SpeedRange>
+	</ZStage>
+	<!-- COMPOUNDS-->
+	<LED1 Model="ShieldM3D05_LED1">
+		<Name>Amber</Name>
+		<MaxIntensity Unit="%" Type="Single">100</MaxIntensity>
+		<MinIntensity Unit="%" Type="Single">0</MinIntensity>
+		<StartIntensity Unit="%" Type="Single">100</StartIntensity>
+		<Wavelength Unit="nm" Type="Single">595</Wavelength>
+	</LED1>
+	<LED1 Model="MainBoard_LED1">
+		<Name>Amber</Name>
+		<MaxIntensity Unit="%" Type="Single">50</MaxIntensity>
+		<MinIntensity Unit="%" Type="Single">0</MinIntensity>
+		<StartIntensity Unit="%" Type="Single">50</StartIntensity>
+		<Wavelength Unit="nm" Type="Single">595</Wavelength>
+	</LED1>
+	<LED2 Model="ShieldM3D05_LED2">
+		<Name>Room</Name>
+		<MaxIntensity Unit="%" Type="Single">100</MaxIntensity>
+		<MinIntensity Unit="%" Type="Single">0</MinIntensity>
+		<StartIntensity Unit="%" Type="Single">10</StartIntensity>
+		<Wavelength Unit="nm" Type="Single">595</Wavelength>
+	</LED2>
+	<LED2 Model="MainBoard_LED2">
+		<Name>Room</Name>
+		<MaxIntensity Unit="%" Type="Single">100</MaxIntensity>
+		<MinIntensity Unit="%" Type="Single">0</MinIntensity>
+		<StartIntensity Unit="%" Type="Single">10</StartIntensity>
+		<Wavelength Unit="nm" Type="Single">595</Wavelength>
+	</LED2>
+	<Fan1 Model="MainBoard_In">
+		<Name>Inflow</Name>
+		<MaxSpeed Unit="Hz" Type="Single">21.67</MaxSpeed>
+	</Fan1>
+	<Fan2 Model="MainBoard_Out">
+		<Name>Outflow</Name>
+		<MaxSpeed Unit="Hz" Type="Single">21.67</MaxSpeed>
+	</Fan2>
+	<Ruptor1 Model="MainBoard_CAP">
+		<Name>Lid</Name>
+	</Ruptor1>
+	<Ruptor2 Model="MainBoard_AU">
+		<Name>Emergency stop</Name>
+	</Ruptor2>
+	<Ruptor3 Model="MainBoard_RUP3">
+		<Name>Ruptor3</Name>
+	</Ruptor3>
+	<TemperatureSensor1 Model="MainBoard_Temp1">
+		<Name>Amber LED heating</Name>
+		<WarningLimit Unit="°C" Type="Single">65</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">85</CriticalLimit>
+	</TemperatureSensor1>
+	<TemperatureSensor2 Model="MainBoard_Temp2">
+		<Name>DLP heating</Name>
+		<WarningLimit Unit="°C" Type="Single">45</WarningLimit>
+		<CriticalLimit Unit="°C" Type="Single">65</CriticalLimit>
+	</TemperatureSensor2>
+</Configuration>
