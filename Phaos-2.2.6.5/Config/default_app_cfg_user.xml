@@ -7,7 +7,7 @@
     <ScaleBar_Show Type="Boolean">true</ScaleBar_Show>
     <Target_Show Type="Boolean">false</Target_Show>
     <Target_Size Type="Vector2">(120; 100)</Target_Size>
-    <Target_CenterLocation Type="Vector2">(1296;972)</Target_CenterLocation>
+    <Target_CenterLocation Type="Vector2">(640; 512)</Target_CenterLocation>
     <AE_Enabled Type="Boolean">false</AE_Enabled>
   </CameraView>
   <Design>

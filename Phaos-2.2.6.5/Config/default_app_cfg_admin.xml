@@ -14,7 +14,7 @@
   <CameraView>
     <ImageFlip>None</ImageFlip>
     <OverrideCameraAE Type="Boolean">false</OverrideCameraAE>
-    <OverrideCameraFlip Type="Boolean">true</OverrideCameraFlip>
+    <OverrideCameraFlip Type="Boolean">false</OverrideCameraFlip>
     <ScaleBar_TextFont>Times</ScaleBar_TextFont>
     <ScaleBar_TextFontSize Unit="px" Type="Int32">18</ScaleBar_TextFontSize>
     <ScaleBar_Color Type="Vector3">(255; 0; 0)</ScaleBar_Color>
