@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- File settings of SFTprint       -->
+<!-- App Color Theme				 -->
+<!-- by Olivier Lecarme 19/04/19     -->
+<Software Name="SFTprint" Ver="1.x">
+  <theme1>#7EB62A</theme1> <!-- Les boutons -->
+  <theme1Bright>#8CD024</theme1Bright>  <!-- Le texte en gras et colonne header -->
+  <theme1Dark>#669523</theme1Dark> <!-- Pas encore utilisé -->
+  <theme2>#542791</theme2> <!-- Les selections/highlight et bouton focus -->
+  <theme2Bright>#713EB6</theme2Bright> <!-- Les selections menu niveau 2 -->
+  <theme2Dark>#3A1B64</theme2Dark> <!-- Les selections menu niveau 0 -->
+  <valid>#669523</valid> <!-- Etat "valide" des boutons et texte (ex: start) -->
+  <notValid>#D02424</notValid> <!-- Etat "invalide" des boutons et texte (ex: stop) -->
+  <ready>#7EB62A</ready> <!-- Etat "prêt" des boutons et texte de status platine -->
+  <warning>#D07524</warning> <!-- Etat "warning" des boutons et texte de status platine OU information -->
+  <notReady>#D09D24</notReady> <!-- Etat "erreur" des boutons et texte de status platine -->
+</Software>
