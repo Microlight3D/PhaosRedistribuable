@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- File settings of SFTprint      -->
+<!-- Managed by the soft DO NOT EDIT -->
+<!-- by Olivier Lecarme 07/04/16     -->
+<Software Name="SFTprint" Ver="1.2">
+  <device>
+    <!-- SmartPrint device version -->
+    <deviceVer>1</deviceVer>
+    <devmode>false</devmode>
+  </device>
+  <FilesDir>
+    <!-- Persistent save directory -->
+    <savedir>C:\Users\Olivier\Desktop</savedir>
+  </FilesDir>
+  <Exposure>
+    <start_objective>5</start_objective>
+    <start_substrate>Glass</start_substrate>
+    <start_resist>AZ1512HS</start_resist>
+    <custom_focusimg>0</custom_focusimg>
+    <custom_focus_path>D:\Data\Olivier\Dessins_videoproj\Cibles\cible1.png</custom_focus_path>
+	<focusingreen>true</focusingreen>
+	<showfilterwarningmsg>false</showfilterwarningmsg>
+  </Exposure>
+  <Drawing>
+    <disp_drawing_size>true</disp_drawing_size>
+    <!-- correct projection power inhomogeneity from a reference image -->
+    <imagecorrection>True</imagecorrection>
+    <imagecorrectionpath>reference.tif</imagecorrectionpath>
+	<imagecorrectionpath_x5>reference_x5.tif</imagecorrectionpath_x5>
+    <imagecorrectionpath_x10>reference_x10.tif</imagecorrectionpath_x10>
+    <maxcorrectionstrength>100</maxcorrectionstrength>
+	<greenbrightness>50</greenbrightness>
+	<activatedrawingshift>false</activatedrawingshift>
+	<xdrawingshift>0</xdrawingshift>
+	<ydrawingshift>0</ydrawingshift>
+  </Drawing>
+  <Camera>
+    <!-- which camera mode is selected: directshow (2) or native Ximea (1) -->
+    <selectedcameramode>1</selectedcameramode>
+    <!-- expousre in ms -->
+    <cameraexposure>1,4</cameraexposure>
+    <!-- exposure in dB -->
+    <cameragain>0</cameragain>
+	<!-- autoexposure and gain -->
+	<aeg>true</aeg>
+	<startupaeg>true</startupaeg>
+	<aegratio>80</aegratio>
+    <!-- define the minimal zoom factor in the camera viewer (between 1 and 20). Default is 3 -->
+    <minscalefactor>2</minscalefactor>
+    <camera_drag_enabled>true</camera_drag_enabled>
+    <cameraareax>330</cameraareax>
+    <cameraareay>300</cameraareay>
+    <cameraareawidth>720</cameraareawidth>
+    <cameraareaheight>524</cameraareaheight>
+    <!-- scalebar on at camera start -->
+    <isscalebaron>False</isscalebaron>
+	<!-- Calibration pour le mode alignement semi-auto -->
+	<calibcamalignx>800</calibcamalignx>
+	<calibcamaligny>400</calibcamaligny>
+	<camtodrawing_ratio_x0p5>1.54</camtodrawing_ratio_x0p5>
+	<camtodrawing_ratio_x1>1.512</camtodrawing_ratio_x1>
+	<camtodrawing_ratio_x2p5>1.512</camtodrawing_ratio_x2p5>
+	<camtodrawing_ratio_x5>1.516</camtodrawing_ratio_x5>
+	<camtodrawing_ratio_x10>1.521</camtodrawing_ratio_x10>
+	<!-- Flip de l'image -->
+	<fliphorizontally>true</fliphorizontally>
+	<flipvertically>false</flipvertically>
+  </Camera>
+  <OpticalParameters>
+    <!-- precision in edit mode of optical caracteristics -->
+    <opticalCarac_precision>5</opticalCarac_precision>
+  </OpticalParameters>
+  <XYStage>
+    <!-- motor full step size in micron -->
+    <xstepsize>2.5</xstepsize>
+    <ystepsize>2.5</ystepsize>
+	<zstepsize>5</zstepsize>
+    <!-- range limits in micron -->
+    <xcalrange1>-37400</xcalrange1>
+    <xcalrange2>37400</xcalrange2>
+    <ycalrange1>-37400</ycalrange1>
+    <ycalrange2>37400</ycalrange2>
+	<zcalrange1>-2000</zcalrange1>
+	<zcalrange2>10000</zcalrange2>
+    <!-- record stage log -->
+    <withlog>false</withlog>
+	<logfp>stage.log</logfp>
+	<maxlogfilesize>5120</maxlogfilesize>
+    <!-- waiting between stage motion stopped and next exposure (in ms) -->
+    <waitingtime>200</waitingtime>
+    <!-- x and y COM name -->
+    <devicenamea>xi-com:\\.\COM5</devicenamea>
+    <devicenameb>xi-com:\\.\COM4</devicenameb>
+	<devicenamec></devicenamec>
+	<xaxisnb>0</xaxisnb>
+	<yaxisnb>1</yaxisnb>
+	<zaxisnb>2</zaxisnb>
+    <!-- axis assignation and directions -->
+    <reverseaxis>False</reverseaxis>
+    <xdirectioninverted>True</xdirectioninverted>
+    <ydirectioninverted>False</ydirectioninverted>
+	<zdirectioninverted>True</zdirectioninverted>
+    <!-- max speed (in step) -->
+    <maxspeed1>2000</maxspeed1>
+    <maxspeed2>500</maxspeed2>
+    <maxspeed3>50</maxspeed3>
+    <maxspeed4>10</maxspeed4>
+    <maxspeed5>1</maxspeed5>
+    <currentmaxspeed>5</currentmaxspeed>
+	<limitspeed>2000</limitspeed>
+	<acceleration>2000</acceleration>
+	<deceleration>5000</deceleration>
+	<limitantiplayspeed>2000</limitantiplayspeed>
+    <!-- tilt adjustment and stitching correction -->
+    <theta>-0,5073</theta>
+    <theta0p5>-0,5073</theta0p5>
+    <tiltcorrected>True</tiltcorrected>
+    <xshift>-8</xshift>
+    <yshift>-8</yshift>
+	<volatilexshift>0</volatilexshift>
+    <volatileyshift>0</volatileyshift>
+    <xpixeloverlap>0</xpixeloverlap>
+    <ypixeloverlap>0</ypixeloverlap>
+    <!-- pixel misalignment correction between green and blue lcd -->
+    <g2bxshift>0</g2bxshift>
+    <g2byshift>0</g2byshift>
+	<!-- z distance (µm) between green and blue images depending on the objectives -->
+	<g2bzshift_x0p5>0</g2bzshift_x0p5>
+	<g2bzshift_x1>1638</g2bzshift_x1>
+	<g2bzshift_x2p5>200</g2bzshift_x2p5>
+	<g2bzshift_x5>75</g2bzshift_x5>
+	<g2bzshift_x10>16</g2bzshift_x10>
+    <!-- stage safety limit (not used yet) -->
+    <safetycoeff>0.95</safetycoeff>
+	<!-- XY stage with encoders -->
+	<xyencoders>false</xyencoders>
+	<!-- backlash compensation -->
+	<backlash>true</backlash>
+	<xantiplay>1800</xantiplay>
+	<yantiplay>1800</yantiplay>
+	<zantiplay>0</zantiplay>
+	<antiplaymaxvalue>1800</antiplaymaxvalue>
+	<xbacklashspeed>2000</xbacklashspeed>
+	<ybacklashspeed>2000</ybacklashspeed>
+	<zbacklashspeed>1000</zbacklashspeed>
+	<activatezfeatures>false</activatezfeatures>
+  </XYStage>
+  <Import>
+    <qcadfilepath>C:\Program Files\QCAD\dwg2bmp.bat</qcadfilepath>
+    <tmpimportfilename>imported_tmp.bmp</tmpimportfilename>
+    <!-- delay induced by the Qcad script (in s) -->
+    <importdelay>14</importdelay>
+    <klayoutfilepath>C:\Users\Olivier\AppData\Roaming\KLayout\klayout_app.exe</klayoutfilepath>
+    <gdsscript1filepath>get_drawing_size.rb</gdsscript1filepath>
+    <gdsscript2filepath>convert2png.rb</gdsscript2filepath>
+    <gdsscript3filepath>stitch.rb</gdsscript3filepath>
+	<gdsscript4filepath>stitch_sspeed.rb</gdsscript4filepath>
+	<gdsscript5filepath>layer_overview.rb</gdsscript5filepath>
+    <klayoutlayerpropfilepath>C:\Program Files (x86)\SFT\SFTprint\layerProp.lyp</klayoutlayerpropfilepath>
+    <tmpscriptfilename>script.rb</tmpscriptfilename>
+    <klayoutdimfile>dim.out</klayoutdimfile>
+    <!-- delay (in ms) between script execution and data extraction -->
+    <!-- required because the script write data to be extracted on HDD -->
+    <klayoutdelay>6000</klayoutdelay>
+    <!-- max waiting time (in s) to open the image -->
+    <klayoutmaxwaitingtime>10</klayoutmaxwaitingtime>
+    <antialiasing>4</antialiasing>
+    <!-- limit image size (in px) that can be opened, higher require vector stitching -->
+    <maximgsize>1000000</maximgsize>
+	<hrxpixelreduction>400</hrxpixelreduction>
+	<hrypixelreduction>200</hrypixelreduction>
+  </Import>
+  <VirtualProjector>
+    <virtualwidth>1920</virtualwidth>
+    <virtualheight>1080</virtualheight>
+  </VirtualProjector>
+  <Security>
+    <autolock>False</autolock>
+  </Security>
+</Software>
